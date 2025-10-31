@@ -3,7 +3,7 @@ FROM node:22 AS build
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
-RUN npm install
+RUN rm -rf node_modules package-lock.json && npm install --ignore-scripts && npm rebuild && npm install
 
 COPY . .
 
