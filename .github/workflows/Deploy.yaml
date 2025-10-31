@@ -49,7 +49,7 @@ jobs:
             fi
 
             echo "Building updated containers..."
-            docker compose build --pull --no-cache
+            docker compose build --pull --no-cache --platform linux/arm64
 
             echo "Recreating services..."
             docker compose up -d --remove-orphans
