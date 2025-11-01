@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, LinkButton, Space } from "@davidnet/svelte-ui";
+	import { Button, FlexWrapper, LinkButton, Space } from "@davidnet/svelte-ui";
 
 	async function downloadBackup() {
 		try {
@@ -48,12 +48,14 @@
 </script>
 
 <h1>Exports</h1>
-<Button appearance="primary" onClick={downloadBackup}>Export DB</Button>
-<Button appearance="primary" onClick={exportExcel}>Export Excel</Button>
-<Space height="var(--token-space-3)" />
-<LinkButton href="/">Home</LinkButton>
-<Button
-	onClick={() => {
-		history.back();
-	}}>Terug</Button
->
+<FlexWrapper gap="var(--token-space-1)">
+	<Button appearance="primary" onClick={downloadBackup}>Export DB</Button>
+	<Button appearance="primary" onClick={exportExcel}>Export Excel</Button>
+	<Space height="var(--token-space-3)" />
+	<LinkButton href="/">Home</LinkButton>
+	<Button
+		onClick={() => {
+			history.back();
+		}}>Terug</Button
+	>
+</FlexWrapper>
