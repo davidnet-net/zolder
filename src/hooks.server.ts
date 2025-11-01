@@ -23,7 +23,7 @@ async function InitDB() {
 	`);
 }
 
-InitPromise = init();
+//InitPromise = init();
 
 async function init() {
 	await InitDB();

@@ -43,7 +43,7 @@
 	</div>
 </nav>
 
-<FlexWrapper direction="column" justifycontent="center" alignitems="center" height="100%" width="100%">
+<FlexWrapper direction="column" justifycontent="center" alignitems="center" height="100% - 56px" width="100%">
 	<slot />
 </FlexWrapper>
 
@@ -90,13 +90,5 @@
 		flex: 1;
 		display: flex;
 		align-items: center;
-	}
-
-	main {
-		height: calc((100vh - 56px) - 4rem);
-		height: calc((100dvh - 56px) - 4rem);
-		width: calc(100vw - 4rem);
-		width: calc(100dvw - 4rem);
-		padding: 2rem;
 	}
 </style>
