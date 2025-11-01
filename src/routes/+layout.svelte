@@ -36,6 +36,7 @@
 			}}
 			alt="Terug"
 		/>
+		<LinkIconButton icon="download" alt="Export" appearance="subtle" href="/export" />
 		<LinkIconButton icon="new_label" alt="Labelmaker" appearance="subtle" href="/labelmaker/" />
 
 		<ThemeMenu />
