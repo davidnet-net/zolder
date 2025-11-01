@@ -43,11 +43,9 @@
 	</div>
 </nav>
 
-<main>
-	<FlexWrapper direction="column" justifycontent="center" alignitems="center" height="100%" width="100%">
-		<slot />
-	</FlexWrapper>
-</main>
+<FlexWrapper direction="column" justifycontent="center" alignitems="center" height="100%" width="100%">
+	<slot />
+</FlexWrapper>
 
 <SearchModal open={showSearch} onClose={() => (showSearch = false)} />
 
